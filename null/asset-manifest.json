@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fullAgency/wordpress/wp-content/themes/barebones/static/css/main.chunk.css",
+    "main.js": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/main.chunk.js",
+    "main.js.map": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/main.chunk.js.map",
+    "runtime-main.js": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/bundle.js",
+    "runtime-main.js.map": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/bundle.js.map",
+    "static/js/2.chunk.js": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/2.chunk.js.map",
+    "index.php": "/fullAgency/wordpress/wp-content/themes/barebones/index.php",
+    "precache-manifest.0657d0007c4d9e2a0bf5d69adc82801b.js": "/fullAgency/wordpress/wp-content/themes/barebones/precache-manifest.0657d0007c4d9e2a0bf5d69adc82801b.js",
+    "service-worker.js": "/fullAgency/wordpress/wp-content/themes/barebones/service-worker.js",
+    "static/css/main.chunk.css.map": "/fullAgency/wordpress/wp-content/themes/barebones/static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "/fullAgency/wordpress/wp-content/themes/barebones/static/js/2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/fullAgency/wordpress/wp-content/themes/barebones/static/media/Neil Bold.b9d9b1a1.otf"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/2.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
