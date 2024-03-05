@@ -10,9 +10,9 @@ Switched from React to Tailpress, because the client wanted to have the ability 
 
 ## Tools
 
-WordPress 6.4
-Tailpress: https://github.com/jeffreyvr/tailpress
-Advanced custom fields pro
+- WordPress 6.4
+- Tailpress: https://github.com/jeffreyvr/tailpress
+- Advanced custom fields pro
 
 ## Instaliation
 
