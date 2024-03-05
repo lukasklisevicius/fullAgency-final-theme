@@ -1,0 +1,307 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: 'NeilBold';
+  src: url(../fonts/NeilBold.ttf);
+}
+
+@font-face {
+  font-family: 'FuturaLight';
+  src: url(../fonts/FUTURA45LIGHT.ttf);
+}
+
+@font-face {
+  font-family: 'FuturaRegular';
+  src: url(../fonts/FUTURA55REGULAR.ttf);
+}
+
+
+
+@tailwind base;
+
+
+@layer utilities{
+  .paused{
+    animation-play-state: paused;
+  }
+}
+
+/* Chrome, Edge, and Safari */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#sticky.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+z-index: 100;
+}
+
+*{
+  /* border:1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
+.swiper{
+  margin:0;
+  /* overflow-x: visible; */
+}
+
+/* .swiper-button-next{
+  background-color: gray;
+  width: 30%;
+} */
+.swiper-slide-prev, .swiper-slide-next{
+  opacity: 0.4;
+  /* transition: 0.3s linear; */
+  filter: grayscale(1);
+  
+}
+.swiper-slide-acive{
+  opacity: 1;
+  transition: 0.3s linear;
+  
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #00000000 !important;
+    fill: rgba(0, 0, 0, 0) !important;
+    stroke: rgba(0, 0, 0, 0) !important;
+}
+
+.contact__form form{
+padding-right: 200px;
+position: relative;
+}
+
+.contact__form input,  .contact__form textarea{
+  width: 100% !important;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.contact__form textarea{
+  height: 200px;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.contact__form input[type="submit"]{
+  background-color: white;
+  color: black;
+  width: 30%!important;
+  font-weight: bold;
+  position: absolute;
+  right: 200px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:-ms-input-placeholder {
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/*waves****************************/
+
+
+.box {
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+
+@media screen and (max-width:1024px) {
+
+  .contact__form form{
+padding-right: 0;
+position: relative;
+}
+.contact__form input[type="submit"]{
+  right: 0;
+}
+}
+
+@media screen and (min-width:1024px) {
+  #sticky{
+    background-size: cover;
+  }
+}
+
+.appear-from-bottom{
+  animation: appear-from-bottom linear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.appear-from-right{
+  animation: appear-from-right linear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+.appear-from-left{
+  animation: appear-from-left linear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.appear{
+  animation: appear linear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.appear-nav{
+  animation: appear-nav linear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+#logos img{
+  animation-delay: calc(var(--index) * 100ms);
+}
+a.contact-item{
+  animation-delay: calc(var(--index) * 300ms);
+}
+.img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+} 
+.img-container img.next {
+  opacity: 1;
+  z-index: 1;
+}
+
+.img-container img.prev {
+  opacity: 1;
+  z-index: 2;
+}
+
+.img-container img.fade-out {
+  opacity: 0;
+  transition: visibility 0s .5s, opacity .5s linear;
+  visibility: hidden;
+}
+
+
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes appear-nav {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0.3;
+  }
+  
+}
+
+@keyframes appear-from-bottom {
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes appear-from-right {
+  from{
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+
+@keyframes appear-from-left{
+  from{
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
