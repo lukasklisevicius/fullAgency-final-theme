@@ -8,7 +8,7 @@ FullAgency is a marketing agency oriented at restaurants
 
 Switched from React to Tailpress, because the client wanted to have the ability to customize various parts of the website.
 
-# Tools
+## Tools
 
 WordPress 6.4
 Tailpress: https://github.com/jeffreyvr/tailpress
@@ -24,3 +24,17 @@ To install this theme on your WordPress website:
 - 4. In ACF plugin tools import "acf-export-2024-03-05.json". 
 - 5. Install the Theme zip file into Wordpress.
 - 6. Activate theme.
+
+## Customization
+
+In terminal run:
+
+npm install
+npm run watch
+
+## Deployment
+
+In terminal run:
+
+npm run production
+
