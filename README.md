@@ -18,12 +18,12 @@ Advanced custom fields pro
 
 To install this theme on your WordPress website:
 
-- 1. Have WordPress prepared.
-- 2. Download this repository as a zip file.
-- 3. Make sure you have Wordpress plugin "Advanced Custom Fields Pro".
-- 4. In ACF plugin tools import "acf-export-2024-03-05.json". 
-- 5. Install the Theme zip file into Wordpress.
-- 6. Activate theme.
+-  Have WordPress prepared.
+-  Download this repository as a zip file.
+-  Make sure you have Wordpress plugin "Advanced Custom Fields Pro".
+-  In ACF plugin tools import "acf-export-2024-03-05.json". 
+-  Install the Theme zip file into Wordpress.
+- Activate theme.
 
 ## Customization
 
