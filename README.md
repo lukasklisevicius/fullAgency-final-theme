@@ -29,12 +29,12 @@ To install this theme on your WordPress website:
 
 In terminal run:
 
-npm install
-npm run watch
+- npm install
+- npm run watch
 
 ## Deployment
 
 In terminal run:
 
-npm run production
+- npm run production
 
